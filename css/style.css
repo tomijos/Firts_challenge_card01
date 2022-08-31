@@ -1,0 +1,217 @@
+:root{
+    
+    --primarioDarkcyan:hsl(158, 36%, 37%);
+    --cream:hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Fraunces';
+
+}
+
+html{
+
+    
+    box-sizing: border-box;
+    
+    }
+    
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+body{   
+    display: flex;
+    background-color: var(--cream);    
+    /* Font-size: 14px; */
+    height: 100vh;
+    align-items: center; 
+    justify-content: center;
+    
+    
+    
+}
+
+.main{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;    
+    background-color:white;
+    border-radius: 15px;
+    overflow: hidden;    
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 10px 10px 17px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 17px -16px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 17px -16px rgba(0,0,0,0.75);
+    max-width: 1440px;
+    
+    
+    
+
+}
+
+.container-imagen img{
+    height: 30rem;
+    margin-bottom: -1rem;
+    display: block;
+     
+}
+.container-info{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+    width: 300px;
+    gap: 0.5rem;
+    
+    
+}
+
+.container-info h1{
+    margin: 0.5rem 0;
+}
+
+
+
+h3{
+    
+    font-size: 0.8rem;
+    color:gray;
+    font-family:'Montserrat';
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+ }
+
+ .text-p{
+    
+    padding: 0;
+    margin-top: 0;
+ }
+
+ p{
+    font-family: 'Fraunces';
+    color:gray;
+    font-size: 12px;
+    line-height: 1.5rem;
+    text-align: justify;
+    
+    
+}
+
+ 
+.costos{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  
+    
+    }
+
+    .costos h1{
+        margin: 0.5rem;
+    }
+    
+    .descuento{
+    font-size: 0.7rem;
+    text-decoration: line-through;
+    color:gray;
+    }
+
+
+
+
+.precio{
+    color: var(--primarioDarkcyan);
+}
+
+button{
+    
+    height: 2.5rem;
+    -webkit-box-shadow: 10px 10px 17px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 17px -16px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 17px -16px rgba(0,0,0,0.75);
+    max-width: 1440px;
+}
+
+button span{
+    color:white;
+ 
+}
+
+.btn{
+    
+    background-color: var(--primarioDarkcyan);     
+    border-radius: 10px;         
+    border: none;
+    cursor: pointer;    
+    -webkit-box-shadow: 10px 10px 17px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 17px -16px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 17px -16px rgba(0,0,0,0.75);
+}
+
+.btn:hover{
+    background-color:  hsl(158, 37%, 25%);
+    transition: 0.3s;
+}
+
+
+
+.icon-cart{
+    
+    width: 01rem;
+}
+
+
+
+
+
+
+@media (max-width:500px){
+
+    .title{
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
+        
+    }
+
+    .main{
+    border-radius: 15px;
+    width: 310px;
+
+    overflow: hidden;    
+    align-items: center;
+    
+    margin: 0;
+        
+        
+    }
+    .container-info{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .container-info p{
+        line-height: 1.2rem;
+        
+    }
+/* Change url img mobil */
+    .container-imagen{
+        content: url(/images/image-product-mobile.jpg);
+        overflow: hidden;
+    }
+    
+
+ 
+  .btn{
+    margin-bottom: 2rem;
+  }
+  
+
+}
+
